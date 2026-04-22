@@ -51,6 +51,7 @@ func _process_position():
 			PLAYER_IS = state.Is.FLOATING
 
 func _ready():
+	Player.PLAYER = self
 	_change_dir(PLAYER_DIR)
 
 func _physics_process(delta):
@@ -111,22 +112,11 @@ func _process_move():
 func _process_input():
 	match PLAYER_IS:
 		state.Is.STANDING:
-			# if Input.is_action_just_pressed("move_left"):
-			# 	if _change_dir(state.Dir.LEFT):
-			# 		return
-			# elif Input.is_action_just_pressed("move_right"):
-			# 	if _change_dir(state.Dir.RIGHT):
-			# 		return
-			# 	# _process_move()
 			if Input.is_action_pressed("move_left"):
 				_change_dir(state.Dir.LEFT)
-					# print("here")
-					# return
 				_process_move()
 			elif Input.is_action_pressed("move_right"):
 				_change_dir(state.Dir.RIGHT)
-					# print("here")
-					# return
 				_process_move()
 
 		state.Is.FLOATING:

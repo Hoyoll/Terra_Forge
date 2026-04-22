@@ -24,6 +24,10 @@ config/name="Terraforge"
 run/main_scene="res://player/scenes/player.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Player="*res://global/Player.gd"
+
 [display]
 
 window/stretch/mode="viewport"

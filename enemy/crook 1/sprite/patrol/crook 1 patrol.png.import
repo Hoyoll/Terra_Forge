@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/crook 1 idle.png-dc6758ba53fe2e0fab9cec6b5b30aaed.stex"
+path="res://.import/crook 1 patrol.png-61eb48e65c06a0f232c73b96991f5c0e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://enemy/crook 1/idle/crook 1 idle.png"
-dest_files=[ "res://.import/crook 1 idle.png-dc6758ba53fe2e0fab9cec6b5b30aaed.stex" ]
+source_file="res://enemy/crook 1/sprite/patrol/crook 1 patrol.png"
+dest_files=[ "res://.import/crook 1 patrol.png-61eb48e65c06a0f232c73b96991f5c0e.stex" ]
 
 [params]
 

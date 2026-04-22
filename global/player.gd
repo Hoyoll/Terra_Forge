@@ -1,15 +1,12 @@
 extends Node
 
+signal SIG_PLAYER(num)
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var PLAYER = null
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
+func emit():
+	emit_signal("SIG_PLAYER", 69)
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
