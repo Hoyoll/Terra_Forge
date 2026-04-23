@@ -73,7 +73,7 @@ func _physics_process(delta):
 func _cancellable_input():
 	match PLAYER_IS:
 		state.Is.STANDING:
-			if Input.is_action_pressed("jump"):
+			if Input.is_action_just_pressed("jump"):
 				_change_action(state.Action.JUMP)
 			pass
 		state.Is.FLOATING:
